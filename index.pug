@@ -1,0 +1,388 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //- link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css", integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM", crossorigin="anonymous")
+        //- link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css")
+        link(rel="stylesheet", href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css")
+        link(rel="stylesheet", href="style.css")
+        title Social Media
+        //- <script  src="https://use.fontawesome.com/1d088a1b8f.js"></script>
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    body 
+        nav
+            .container
+                h2.logo nokoSocial
+                .search-bar
+                    i.ul.uil-search
+                    input#search(type="search", placeholder="Search for creators and projects")
+                .profile 
+                    label.btn.btn-primary(for="create-post") Create 
+                    img.profile-photo(src="./images/Untitled-1.jpg", alt="Profile Picture")
+        main
+            .container
+                .left
+                    .data
+                        img.profile-photo(src="./images/Untitled-1.jpg",alt="Profile Picture")
+                        .text 
+                            h4 Hamed Osama 
+                            p.text-muted @Hamed
+                    .sidebar
+                        p.show-menu.active#show-menu: i.uil.uil-bars
+                        ul.menu-options
+                            li.menu-item.active
+                                span 
+                                    i.uil.uil-home
+                                h4 Home
+                            li.menu-item
+                                span 
+                                    i.uil.uil-compass
+                                h4 Explore
+                            li.menu-item#notifications
+                                span
+                                    i.ul.uil-bell#notification-count(data-count = '9+')
+                                h4 Notifications
+                                .notifications-popup
+                                    .notification
+                                        .profile-photo 
+                                            img(src="./images/profile-2.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Ahmed Ashraf</b> accepted your friend request
+                                            small.text-muted 2 DAYS AGO
+                                    .notification
+                                        .profile-photo 
+                                            img(src="./images/profile-3.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Yara Mohamed</b> commented on your post
+                                            small.text-muted 1 DAY AGO
+                                    .notification
+                                        .profile-photo 
+                                            img(src="./images/profile-4.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Sondos Hussein</b> and 
+                                            b 438 others 
+                                            | liked your post
+                                            small.text-muted 9 HOURS AGO
+                                    .notification
+                                        .profile-photo
+                                            img(src="./images/profile-5.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Nada Tamer</b> commented on a post you're
+                                            small.text-muted 1 HOUR AGO
+                                    .notification
+                                        .profile-photo
+                                            img(src="./images/profile-6.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Mariam Adham</b> commented on a post you're tagged in
+                                            small.text-muted 1 HOUR AGO
+                                    .notification
+                                        .profile-photo
+                                            img(src="./images/profile-7.jpg", alt="Profile Picture")
+                                        .notification-body
+                                            <b>Carla exposito</b> commented on your post
+                                            small.text-muted 4 MINUTES AGO
+                            li.menu-item#messages-notifications
+                                span
+                                    i.uil.uil-envelope#message-count(data-count = '6')
+                                h4 Messages
+                            li.menu-item
+                                span
+                                    i.uil.uil-bookmark-full
+                                h4 Bookmarks
+                            li.menu-item
+                                span
+                                    i.uil.uil-chart-line
+                                h4 Analytics
+                            li.menu-item.themes
+                                span
+                                    i.uil.uil-palette
+                                h4 Theme
+                            li.menu-item
+                                span
+                                    i.uil.uil-setting
+                                h4 settings
+                    label.btn.btn-primary(for="create-post") Create 
+                .middle
+                    .stories 
+                        .story
+                            img.profile-photo(src="./images/profile-8.jpg", alt="Profile Pictures")
+                            p.name Your Story
+                        .story
+                            img.profile-photo(src="./images/profile-9.jpg", alt="Profile Pictures")
+                            p.name Lilla James
+                        .story
+                            img.profile-photo(src="./images/profile-10.jpg", alt="Profile Pictures")
+                            p.name Winne Hale
+                        .story
+                            img.profile-photo(src="./images/profile-11.jpg", alt="Profile Pictures")
+                            p.name Daniel Bale
+                        .story
+                            img.profile-photo(src="./images/profile-12.jpg", alt="Profile Pictures")
+                            p.name Jane Doe
+                        .story
+                            img.profile-photo(src="./images/profile-13.jpg", alt="Profile Pictures")
+                            p.name Tina White
+                    .create-post
+                        img.profile-photo(src="./images/Untitled-1.jpg", alt="Profile Picture")
+                        input#create-post(type="text",placeholder="What's on your mind, Hamed?")
+                        label.btn.btn-primary(for="create-post") Post 
+                    .timeline
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-14.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-1.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-15.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-2.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-16.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-3.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-17.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-4.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-18.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-5.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                        .post
+                            .owner-data
+                                .owner
+                                    .owner-photo
+                                        img.profile-photo(src="./images/profile-19.jpg", alt="Profile Picture")
+                                    .data
+                                        h4.name Lana Rose 
+                                        small.data Dubai, 15 MINUTES AGO
+                                i.uil.uil-ellipsis-h.options
+                            img.post-photo(src="./images/feed-6.jpg", alt="post")
+                            .like-comment-share
+                                .left
+                                    i.fa-solid.fa-heart.like
+                                    i.uil.uil-comment-dots.comment
+                                    i.uil.uil-location-arrow.share
+                                .right
+                                    i.uil.uil-bookmark-full.save
+                            .post-data
+                                .likes-users-profiles
+                                    img.profile-photo(src="./images/profile-8.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-11.jpg", alt="photo-likes")
+                                    img.profile-photo(src="./images/profile-12.jpg", alt="photo-likes")
+                                p.liked-by Liked by #[b Ernest Achiver] and #[b 239 others]
+                            .caption
+                                p #[b Lana Rose] Lorem ipsum dolor sit amet. #[span.hashtag.text-muted #lifestyle]
+                            .comments
+                                p.text-muted View all 277 comments
+                .right.right-menu
+                    .top
+                        h4 Messages
+                        i.uil.uil-edit
+                    .search-bar
+                        i.ul.uil-search
+                        input#search-messages(type="search", placeholder="Search Messages")
+                    .messages-options
+                        span.primary.active Primary
+                        span.general General
+                        span.message-requests#message-requests Requests(2)
+                    .messages.active
+                        .message
+                            img.profile-photo(src="./images/profile-17.jpg", alt="Profile Picture")
+                            .text
+                                p.name Edem Quist
+                                p.message-text.text-muted Just woke up Bruh
+                        .message
+                            img.profile-photo(src="./images/profile-18.jpg", alt="Profile Picture")
+                            .text
+                                p.name Franca Deila
+                                p.message-text Receive Bruh. Thanks!
+                        .message
+                            img.profile-photo(src="./images/profile-19.jpg", alt="Profile Picture")
+                            .text
+                                p.name Edem Quist
+                                p.message-text 3 new messages
+                        .message
+                            img.profile-photo(src="./images/profile-12.jpg", alt="Profile Picture")
+                            .text
+                                p.name Jane Doe
+                                p.message-text.text-muted Lol you right
+                        .message
+                            img.profile-photo(src="./images/profile-20.jpg", alt="Profile Picture")
+                            .text
+                                p.name Malak Mohamed
+                                p.message-text Birthday tomorrow!
+                    .requests
+                        .request
+                            .user
+                                img.profile-photo(src="./images/profile-6.jpg", alt="Profile Picture")
+                                .text
+                                    h4 Yara Ashraf
+                                    p.text-muted 5 mutual friends
+                            .req-options
+                                button.btn.btn-primary.btn-accept(type='button') Accept
+                                button.btn.btn-decline(type='button') Decline
+                        .request
+                            .user
+                                img.profile-photo(src="./images/profile-9.jpg", alt="Profile Picture")
+                                .text
+                                    h4 Nader Ali
+                                    p.text-muted No mutual friends
+                            .req-options
+                                button.btn.btn-primary.btn-accept(type='button') Accept
+                                button.btn.btn-decline(type='button') Decline
+
+        .theme-menu
+            .container
+                p.btn-close: i.uil.uil-times
+                .title
+                    h2 Customize your view
+                    p.text-muted Manage your font size, color and background
+                .font-size
+                    h3 Font size
+                    .sizes-container
+                        span.small Aa
+                        .sizes
+                            span.size(data-size='1')
+                            span.size(data-size='2')
+                            span.size.active(data-size='3')
+                            span.size(data-size='4')
+                            span.size(data-size='5')
+                        span.large Aa
+                .color
+                    h3 color
+                    .colors-container
+                        span.change-color.active#purple
+                        span.change-color#yellow
+                        span.change-color#red
+                        span.change-color#green
+                        span.change-color#blue
+                .backgrounds
+                    h3 Background
+                    .filters
+                        .light.background
+                            span.select
+                            span.mode Light
+                        .dim.background
+                            span.select
+                            span.mode Dim
+                        .dark.background
+                            span.select
+                            span.mode Dark
+        script(src="./main.js") 
